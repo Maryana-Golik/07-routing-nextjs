@@ -24,12 +24,21 @@ const Modal = ({ children, onClose }: ModalProps) => {
       onClick={onClose}
     >
       <div className={css.modal} onClick={(e) => e.stopPropagation()}>
-        <button onClick={onClose}>Close</button>
-        {children}
-      </div>
+  <button
+    type="button"
+    className={css.closeBtn}
+    aria-label="Close modal"
+    title="Close"
+    onClick={onClose}
+  >
+    &times;
+  </button>
+  {children}
+</div>
     </div>,
     document.body
   );
+  
 };
 
 export default Modal;

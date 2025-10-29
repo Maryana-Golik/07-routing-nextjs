@@ -20,3 +20,24 @@
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.closeBtn:hover {
+  opacity: 0.8;
+}
+
+.closeBtn:focus-visible {
+  outline: 2px solid #0d6efd;
+  border-radius: 6px;
+}
