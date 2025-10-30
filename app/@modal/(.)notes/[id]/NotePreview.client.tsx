@@ -39,10 +39,20 @@ export default function NotePreview() {
       <div className={css.container}>
         {note && (
           <div className={css.item}>
-            <div className={css.tag}>{tag}</div>
             <div className={css.header}>
               <h2>{title}</h2>
+              {}
+              <button
+                type="button"
+                className={css.backBtn}
+                onClick={handleClosePreview}
+                aria-label="Go back"
+              >
+                Back
+              </button>
             </div>
+
+            <div className={css.tag}>{tag}</div>
             <p className={css.content}>{content}</p>
             <p className={css.date}>{formattedDate}</p>
           </div>
@@ -51,3 +61,4 @@ export default function NotePreview() {
     </Modal>
   );
 }
+

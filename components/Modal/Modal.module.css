@@ -21,6 +21,28 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
 .closeBtn {
   position: absolute;
   top: 8px;
@@ -32,12 +54,18 @@
   cursor: pointer;
   padding: 4px 8px;
 }
+.closeBtn:hover { opacity: 0.8; }
+.closeBtn:focus-visible { outline: 2px solid #0d6efd; border-radius: 6px; }
 
-.closeBtn:hover {
-  opacity: 0.8;
-}
 
-.closeBtn:focus-visible {
-  outline: 2px solid #0d6efd;
+.closeTextBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #0d6efd;
+  background: transparent;
+  border: 1px solid #b6d4fe;
   border-radius: 6px;
+  cursor: pointer;
 }
+.closeTextBtn:hover { background: #e7f1ff; }
+
